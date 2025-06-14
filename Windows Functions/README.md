@@ -13,11 +13,11 @@ Picture your data like a long train, where each coach represents a specific grou
 
 ### Ranking functions:
 
-### 🚂 **Imagine Your Data as a Long Train**
+#### **Imagine Your Data as a Long Train**
 
 Each **coach** in the train represents a **partition** or group—like a department, product category, or geographic region. Inside each coach are **passengers (rows of data)** that need to be ranked.
 
-### 1. **ROW\_NUMBER()** – Strict Seat Numbering
+#### 1. **ROW\_NUMBER()** – Strict Seat Numbering
 
 Each passenger gets a **unique seat number** in order.
 
@@ -31,7 +31,7 @@ If 3 people tie for 1st place, they’ll get:
 1, 2, 3
 ```
 
-### 2. **RANK()** – Honors Equal Performers
+#### 2. **RANK()** – Honors Equal Performers
 
 Passengers with the **same score** get the **same rank**, but the **next rank skips accordingly**.
 
@@ -44,7 +44,7 @@ If 3 people tie for 1st place, the ranks will be:
 1, 1, 1, 4
 ```
 
-### 3. **DENSE\_RANK()** – No Gaps Between Winners
+#### 3. **DENSE\_RANK()** – No Gaps Between Winners
 
 Same as `RANK()`, but it **doesn't skip ranks**.
 * Think of a coach where tied passengers still get equal status, but the numbering **remains dense**.
@@ -55,7 +55,7 @@ If 3 people tie for 1st place, the ranks will be:
 1, 1, 1, 2
 ```
 
-### 4. **NTILE(n)** – Divide the Coach into Equal Sections
+#### 4. **NTILE(n)** – Divide the Coach into Equal Sections
 
 Splits the passengers **evenly across `n` parts** (like assigning each to a cabin).
 * If you want to divide the group into **quartiles, deciles**, etc., this is your tool.
