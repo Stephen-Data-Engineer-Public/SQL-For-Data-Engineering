@@ -6,8 +6,8 @@ Picture your data like a long train, where each coach represents a specific grou
 
 ## Types of Window Functions
  The windowing functions can be divided into several types:
-- **Ranking functions:** This type of function adds a ranking for each row or divides the rows into buckets. The include: _ROW_NUMBER_, _RANK_, _DENSE_RANK_, and _NTILE_.
-- **Window aggregates:** This function allows you to calculate summary values in a non-aggregated query. The include: _MIN()_, _MAX()_, 
+- **Ranking functions:** This type of function adds a ranking for each row or divides the rows into buckets. 
+- **Window aggregates:** This function allows you to calculate summary values in a non-aggregated query.
 - **Accumulating aggregates:** Accumulating aggregates are just aggregate window functions (like SUM, AVG, COUNT) with a window frame that grows; meaning it accumulates values over a defined range.
 - **Analytic (Offset) functions:** Several new scalar functions, four of which are almost magical!
 
